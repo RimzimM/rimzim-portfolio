@@ -2,6 +2,7 @@ import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles.css'
 import './hero-polish.css'
+import './mockup-polish.css'
 
 const skills = ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Redux', 'Git', 'GitHub', 'REST APIs']
 

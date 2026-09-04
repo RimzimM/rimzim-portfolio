@@ -77,19 +77,44 @@ function App() {
             </div>
           </div>
 
-          <div className="hero-art" aria-label="Illustrated frontend developer workspace">
-            <div className="moon" />
-            <div className="window-glow" />
-            <div className="plant"><i /><i /><i /><i /></div>
-            <div className="desk">
-              <div className="laptop">
-                <div className="screen-code"><span>const</span> developer = &#123;<br />&nbsp;&nbsp;name: <b>'Rimzim'</b>,<br />&nbsp;&nbsp;craft: <b>'frontend'</b><br />&#125;;</div>
-              </div>
-              <div className="mug">build<br />learn<br />grow</div>
-              <div className="books"><span>React</span><span>TypeScript</span><span>JavaScript</span></div>
-            </div>
-            <div className="portrait"><div className="hair" /><div className="face" /><div className="body" /></div>
+          <div className="hero-art" aria-label="Abstract frontend developer illustration">
+            <div className="hero-grid" />
+            <div className="hero-ambient hero-ambient-one" />
+            <div className="hero-ambient hero-ambient-two" />
             <p className="art-note handwritten">turning ideas into<br />real products ♡</p>
+            <div className="floating-badge handwritten">clean code • better UX</div>
+
+            <div className="hero-window">
+              <div className="window-top"><i /><i /><i /><span>portfolio.tsx</span></div>
+              <div className="window-main">
+                <div className="window-copy">
+                  <p className="window-kicker">Frontend focus</p>
+                  <h3>React + TypeScript interfaces built with care.</h3>
+                  <div className="mini-bars"><span /><span /><span /></div>
+                  <div className="tiny-metrics">
+                    <div><strong>Accessible</strong><small>inclusive UX</small></div>
+                    <div><strong>Responsive</strong><small>mobile-first</small></div>
+                    <div><strong>Reusable</strong><small>clean components</small></div>
+                    <div><strong>Fast</strong><small>thoughtful polish</small></div>
+                  </div>
+                </div>
+                <div className="code-card" aria-hidden="true">
+                  <span className="code-purple">const</span>
+                  <span> developer = &#123;</span>
+                  <span className="code-indent">name: <b>'Rimzim'</b>,</span>
+                  <span className="code-indent">role: <b>'Frontend Developer'</b>,</span>
+                  <span className="code-indent">skills: <b>['React', 'TypeScript']</b>,</span>
+                  <span className="code-indent">build: <b>'thoughtful web experiences'</b></span>
+                  <span>&#125;;</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="floating-chip chip-react">⚛ React</div>
+            <div className="floating-chip chip-ts">TS TypeScript</div>
+            <div className="floating-chip chip-js">JS JavaScript</div>
+            <div className="hero-note-card"><span>Build</span><span>Learn</span><span>Grow</span><span>Repeat</span></div>
+            <div className="mini-preview-card" aria-hidden="true"><p>UI system</p><div className="mini-preview-lines"><i /><i /><i /></div></div>
           </div>
           <div className="hero-wave" />
         </section>
@@ -133,16 +158,8 @@ function App() {
             <p className="kicker">My experience</p>
             <h2>Where I’ve worked</h2>
             <div className="timeline">
-              <article>
-                <span className="dot" />
-                <div className="role-head"><div><h3>Tech Mahindra</h3><p>Senior Software Engineer · Frontend</p></div><time>Dec 2023 — Jul 2024</time></div>
-                <p>Built and maintained responsive web experiences using React and JavaScript, collaborating with cross-functional teams to deliver reliable product features.</p>
-              </article>
-              <article>
-                <span className="dot" />
-                <div className="role-head"><div><h3>Capgemini</h3><p>Consultant · Frontend</p></div><time>Apr 2022 — Dec 2023</time></div>
-                <p>Worked on enterprise React and TypeScript applications, reusable components, performance improvements and UI implementation with design teams.</p>
-              </article>
+              <article><span className="dot" /><div className="role-head"><div><h3>Tech Mahindra</h3><p>Senior Software Engineer · Frontend</p></div><time>Dec 2023 — Jul 2024</time></div><p>Built and maintained responsive web experiences using React and JavaScript, collaborating with cross-functional teams to deliver reliable product features.</p></article>
+              <article><span className="dot" /><div className="role-head"><div><h3>Capgemini</h3><p>Consultant · Frontend</p></div><time>Apr 2022 — Dec 2023</time></div><p>Worked on enterprise React and TypeScript applications, reusable components, performance improvements and UI implementation with design teams.</p></article>
             </div>
           </div>
 
@@ -150,10 +167,7 @@ function App() {
             <p className="kicker">Tech skills</p>
             <h2>Technologies I work with</h2>
             <div className="skill-grid">{skills.map(skill => <span key={skill}>{skill}</span>)}</div>
-            <div className="about-card" id="about">
-              <div className="about-icon">✦</div>
-              <div><h3>A little more about me</h3><p>I enjoy turning ideas into useful products, writing maintainable frontend code and building interfaces that feel clear and intentional. I’m currently creating new React and TypeScript projects while exploring practical AI integrations.</p></div>
-            </div>
+            <div className="about-card" id="about"><div className="about-icon">✦</div><div><h3>A little more about me</h3><p>I enjoy turning ideas into useful products, writing maintainable frontend code and building interfaces that feel clear and intentional. I’m currently creating new React and TypeScript projects while exploring practical AI integrations.</p></div></div>
           </div>
         </section>
 
